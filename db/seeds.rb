@@ -50,7 +50,7 @@ alwafer = Meter.create(
   }
 )
 
-Meter.create(
+alhazaj = Meter.create(
   {
     name: "الهزج",
     pattern: "0101011 0101011",
@@ -58,7 +58,7 @@ Meter.create(
   }
 )
 
-Meter.create(
+alrajaz = Meter.create(
   {
     name: "الرجز",
     pattern: "0110101 0110101 0110101",
@@ -66,7 +66,7 @@ Meter.create(
   }
 )
 
-alraml = Meter.create(
+alramal = Meter.create(
   {
     name: "الرمل",
     pattern: "0101101 0101101 0101101",
@@ -122,7 +122,7 @@ almojtath = Meter.create(
   }
 )
 
-almutakareb = Meter.create(
+almutakarab = Meter.create(
   {
     name: "",
     pattern: "",
@@ -130,7 +130,7 @@ almutakareb = Meter.create(
   }
 )
 
-almohadath = Meter.create(
+almohdath = Meter.create(
   {
     name: "",
     pattern: "",

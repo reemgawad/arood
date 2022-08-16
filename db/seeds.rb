@@ -13,7 +13,7 @@ print "Seeding meters..."
 altaweel = Meter.create(
   {
     name: "الطويل",
-    pattern: "011011 01011 0101011 01011",
+    pattern: "11010110101011010110110",
     mnemonic: "فعولن مفاعيلن فعولن مفاعلن"
   }
 )
@@ -21,15 +21,15 @@ altaweel = Meter.create(
 almadeed = Meter.create(
   {
     name: "المديد",
-    pattern: "",
-    mnemonic: ""
+    pattern: "1011010101101011010",
+    mnemonic: "فاعلاتن فاعلن فاعلاتن"
   }
 )
 
 albaseet = Meter.create(
   {
     name: "البسيط",
-    pattern: "0111 0110101 01101 0110101",
+    pattern: "10101101011010101101110",
     mnemonic: "مستفعلن فاعلن مستفعلن فعلن"
   }
 )
@@ -37,7 +37,7 @@ albaseet = Meter.create(
 alkamel = Meter.create(
   {
     name: "الكامل",
-    pattern: "0110111 0110111 0110111",
+    pattern: "111011011101101110110",
     mnemonic: "متفاعلن متفاعلن متفاعلن"
   }
 )
@@ -45,71 +45,71 @@ alkamel = Meter.create(
 alwafer = Meter.create(
   {
     name: "الوافر",
-    pattern: "01011 0111011 0111011",
-    mnemonic: ""
+    pattern: "1101110110111011010",
+    mnemonic: "مفاعلتن مفاعلتن فعولن"
   }
 )
 
-Meter.create(
+alhazaj = Meter.create(
   {
     name: "الهزج",
-    pattern: "0101011 0101011",
+    pattern: "11010101101010",
     mnemonic: "مفاعيلن مفاعيلن"
   }
 )
 
-Meter.create(
+alrajaz = Meter.create(
   {
     name: "الرجز",
-    pattern: "0110101 0110101 0110101",
+    pattern: "101011010101101010110",
     mnemonic: "مستفعلن مستفعلن مستفعلن"
   }
 )
 
-alraml = Meter.create(
+alramal = Meter.create(
   {
     name: "الرمل",
-    pattern: "0101101 0101101 0101101",
-    mnemonic: ""
+    pattern: "101101010110101011010",
+    mnemonic: "فاعلاتن فاعلاتن فاعلاتن"
   }
 )
 
 alsaree3 = Meter.create(
   {
     name: "السريع",
-    pattern: "01101 0110101 0110101",
+    pattern: "1010110101011010110",
     mnemonic: "مستفعلن مستفعلن فاعلن"
   }
 )
 
 almonsare7 = Meter.create(
   {
-    name: "",
-    pattern: "",
-    mnemonic: ""
+    name: "المنسرح",
+    pattern: "101011010101011010110",
+    mnemonic: "مستفعلن مفعولات مستفعلن"
   }
 )
 
 alkhafeef = Meter.create(
   {
-    name: "",
-    pattern: "",
-    mnemonic: ""
+    name: "الخفيف",
+    pattern: "101101010101101011010",
+    mnemonic: "فاعلاتن مستفعلن فاعلاتن"
   }
 )
 
 almodare3 = Meter.create(
   {
-    name: "",
-    pattern: "",
-    mnemonic: ""
+    name: "المضارع",
+    pattern: "11010101011010",
+    mnemonic: "مفاعيلن فاعلاتن"
   }
 )
 
 almoktadeb = Meter.create(
   {
     name: "",
-    pattern: "",
+    pattern: "10101011010110",
     mnemonic: ""
   }
 )
@@ -117,23 +117,23 @@ almoktadeb = Meter.create(
 almojtath = Meter.create(
   {
     name: "",
-    pattern: "",
+    pattern: "10101101011010",
     mnemonic: ""
   }
 )
 
-almutakareb = Meter.create(
+almutakarab = Meter.create(
   {
     name: "",
-    pattern: "",
+    pattern: "11010110101101011010",
     mnemonic: ""
   }
 )
 
-almohadath = Meter.create(
+almohdath = Meter.create(
   {
     name: "",
-    pattern: "",
+    pattern: "10110101101011010110",
     mnemonic: ""
   }
 )

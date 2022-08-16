@@ -108,33 +108,33 @@ almodare3 = Meter.create(
 
 almoktadeb = Meter.create(
   {
-    name: "",
+    name: "المقتضب",
     pattern: "10101011010110",
-    mnemonic: ""
+    mnemonic: "مفعولات مستفعلن"
   }
 )
 
 almojtath = Meter.create(
   {
-    name: "",
+    name: "المجتث",
     pattern: "10101101011010",
-    mnemonic: ""
+    mnemonic: "مستفعلن فاعلات"
   }
 )
 
 almutakarab = Meter.create(
   {
-    name: "",
+    name: "المتقارب",
     pattern: "11010110101101011010",
-    mnemonic: ""
+    mnemonic: "فعولن فعولن فعولن فعولن"
   }
 )
 
 almohdath = Meter.create(
   {
-    name: "",
+    name: "المحدث",
     pattern: "10110101101011010110",
-    mnemonic: ""
+    mnemonic: "فعلن فعلن فعلن فعلن"
   }
 )
 

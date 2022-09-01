@@ -1,0 +1,8 @@
+<h1>Type:</h1>
+
+<% @meters.each do |meter| %>
+  <div class="pattern-container">
+    <h2><%= @meter.name %></h2>
+    <p><%= @meter.mnemonic %></p>
+  </div>
+<% end %>

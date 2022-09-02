@@ -1,6 +1,19 @@
-<h1>Type:</h1>
+<h1>3arood</h1>
 
-<% @meters.each do |meter| %>
+<h2>Type...</h2>
+
+<%# <input type="text"> %>
+
+<%= form_tag("/meters", method: "post") do %>
+  <%= label_tag :poetry_line %><br>
+  <%= text_field_tag :poetry_line %>
+  <%= submit_tag("Submit") %>
+<% end %>
+
+<br>
+<br>
+
+<% @meters.first(5).each do |meter| %>
   <div class="pattern-container">
     <h2><%= meter.name %></h2>
     <p><%= meter.mnemonic %></p>

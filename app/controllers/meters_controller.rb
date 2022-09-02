@@ -1,28 +1,25 @@
 class MetersController < ApplicationController
+  # index method:
+  #   look at each character in the word input
+  #   for each character, translate it into binary
+  #   put all the binaries into one pattern
+  #   match that pattern to the database
+  #   get all db records that match and assign to @meters
+
   def index
     if params[:query].present?
       word = params[:query]
       pattern = []
       word.chars.each do |char|
         pattern << translate(char)
-        raise
+        # raise
       end
-      pattern.join('')
+      input_pattern = pattern.join('')
+      @meters = Meter.search_by_pattern(input_pattern)
+      # raise
     else
       @meters = Meter.all
     end
-  end
-
-  def new
-  end
-
-  def create
-    word = params[:word]
-    # look at each character in the word input
-    # for each character, translate it into binary
-    # put all the binaries into one pattern
-    # match that pattern to the database
-    # get all db records that match and assign to @meters
   end
 
   def translate(character)

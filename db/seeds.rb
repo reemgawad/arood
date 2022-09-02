@@ -138,4 +138,12 @@ almohdath = Meter.create(
   }
 )
 
+test_meter = Meter.create(
+  {
+    name: "test meter",
+    pattern: "00",
+    mnemonic: "i hate my life"
+  }
+)
+
 puts "Done."

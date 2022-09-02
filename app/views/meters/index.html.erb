@@ -13,16 +13,10 @@
   <% end %>
 </div>
 
-<!-- <%= form_tag("/meters", method: "post") do %>
-  <%= label_tag :poetry_line %><br>
-  <%= text_field_tag :poetry_line %>
-  <%= submit_tag("Submit") %>
-<% end %> -->
-
 <br>
 <br>
 
-<% @meters.first(5).each do |meter| %>
+<% @meters.each do |meter| %>
   <div class="pattern-container">
     <h2><%= meter.name %></h2>
     <p><%= meter.mnemonic %></p>

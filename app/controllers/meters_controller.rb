@@ -8,11 +8,11 @@ class MetersController < ApplicationController
 
   def create
     word = params[:word]
-    # look at each character in the word.
+    # look at each character in the word input
     # for each character, translate it into binary
     # put all the binaries into one pattern
-    #
-    @meter =
+    # match that pattern to the database
+    # get all db records that match and assign to @meters
   end
 
   def translate(character)

@@ -3,6 +3,14 @@ class MetersController < ApplicationController
     @meters = Meter.all
   end
 
+  def new
+  end
+
+  def create
+    word = params[:word]
+    @meter =
+  end
+
   def translate(character)
     tashkil = [' ُ', ' َ', ' ِ']
     tanween = [' ٌ', ' ً', ' ٍ']

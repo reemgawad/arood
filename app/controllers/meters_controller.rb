@@ -8,6 +8,10 @@ class MetersController < ApplicationController
 
   def create
     word = params[:word]
+    # look at each character in the word.
+    # for each character, translate it into binary
+    # put all the binaries into one pattern
+    #
     @meter =
   end
 

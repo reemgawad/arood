@@ -1,6 +1,16 @@
 class MetersController < ApplicationController
   def index
-    @meters = Meter.all
+    if params[:query].present?
+      word = params[:query]
+      pattern = []
+      word.chars.each do |char|
+        pattern << translate(char)
+        raise
+      end
+      pattern.join('')
+    else
+      @meters = Meter.all
+    end
   end
 
   def new

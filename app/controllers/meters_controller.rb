@@ -16,7 +16,7 @@ class MetersController < ApplicationController
       end
       input_pattern = pattern.join('')
       @meters = Meter.search_by_pattern(input_pattern)
-      # raise
+      raise
     else
       @meters = Meter.all
     end
@@ -40,8 +40,8 @@ class MetersController < ApplicationController
       '01'
     when madd
       '10'
-    else
-      '0'
+    # else
+    #   '0'
     end
   end
 end

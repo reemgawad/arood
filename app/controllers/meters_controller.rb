@@ -32,7 +32,7 @@ class MetersController < ApplicationController
     when *tashkil
       '1'
     when *tanween
-      '0'
+      '10'
     when sokoon
       '0'
     when shadda

@@ -1,5 +1,14 @@
 // Specific CSS for your home-page
 
 h1 {
-  font-size: $h1-font;
+  font-size: $h1-font-size;
+}
+
+.english-font {
+  font-family: $english-font;
+}
+
+body {
+  position: relative;
+  // min-height: 100vh;
 }

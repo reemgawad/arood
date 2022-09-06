@@ -1,6 +1,6 @@
 <div class="meter-container mt-5">
   <% if params[:query].present? && meters.empty? %>
-    <%= "No matches found" %>
+    <p class="english-font">No matches found</p>
   <% else %>
     <% meters.each do |meter| %>
       <div class="pattern-container">

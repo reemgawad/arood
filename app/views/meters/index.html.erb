@@ -1,23 +1,24 @@
 <div class="container">
   <h1 class="text-center mt-3">3arood</h1>
 
-  <div class="search-bar mt-5">
-    <%= form_with url: meters_path, method: :get, class: "d-flex" do %>
-      <%= text_field_tag :query,
-        params[:query],
-        class: "form-control",
-        placeholder: "Type your line.."
-      %>
-      <%= submit_tag "Search", class: "btn btn-primary" %>
-    <% end %>
-  </div>
+  <div data-controller="refresh-meter">
+    <div class="search-bar mt-5">
+      <%= form_with url: meters_path, method: :get, data: { refresh_meter_target: 'form' }, class: "d-flex" do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "Type your line..",
+          data: {
+                  refresh_meter_target: 'searchInput',
+                  action: "keyup->refresh-meter#update",
+                  }
+        %>
+        <%= submit_tag "Search", class: "btn btn-primary" %>
+      <% end %>
+    </div>
 
-  <div class="meter-container mt-5">
-    <% @meters.each do |meter| %>
-      <div class="pattern-container">
-        <h2><%= meter.name %></h2>
-        <p><%= meter.mnemonic %></p>
-      </div>
-    <% end %>
+    <div data-refresh-meter-target="metersList">
+      <%= render 'meters_list', meters: @meters %>
+    </div>
   </div>
 </div>

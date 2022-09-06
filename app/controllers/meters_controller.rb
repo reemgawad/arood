@@ -19,6 +19,16 @@ class MetersController < ApplicationController
     else
       @meters = []
     end
+
+    # implementing ajax in search
+    respond_to do |format|
+      format.html
+      format.json do
+        render json: {
+          meters: render_to_string('meters/_meters_list.html', layout: false, locals: { meters: @meters }),
+        }
+      end
+    end
   end
 
   def translate(character)

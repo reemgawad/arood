@@ -6,8 +6,8 @@
       <%= form_with url: meters_path, method: :get, data: { refresh_meter_target: 'form' }, class: "d-flex" do %>
         <%= text_field_tag :query,
           params[:query],
-          class: "form-control text-end",
-          placeholder: "اكتب",
+          class: "form-control text-end search-input",
+          placeholder: "..اكتب",
           data: {
                   refresh_meter_target: 'searchInput',
                   action: "keyup->refresh-meter#update"

@@ -11,8 +11,7 @@ class MetersController < ApplicationController
       word = params[:query]
       pattern = []
       word.chars.each do |char|
-        pattern << translate(char)
-        # raise
+        pattern << translate(" #{char}") # space before the char necessary for recognition of arabic harakat
       end
       input_pattern = pattern.join('')
       @meters = Meter.search_by_pattern(input_pattern)

@@ -11,7 +11,7 @@ class MetersController < ApplicationController
       word = params[:query]
       pattern = []
       word.chars.each do |char|
-        pattern << translate(char)
+        pattern << translate(" #{char}")
         # raise
       end
       input_pattern = pattern.join('')
@@ -40,8 +40,8 @@ class MetersController < ApplicationController
       '01'
     when madd
       '10'
-    # else
-    #   '0'
+    else
+      '0'
     end
   end
 end

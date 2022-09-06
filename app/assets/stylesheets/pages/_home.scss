@@ -10,5 +10,15 @@ h1 {
 
 body {
   position: relative;
-  // min-height: 100vh;
+  height: 95vh;
+}
+
+.arood-title {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: rgb(163, 74, 74);
+    transition-delay: 0.1s;
+  }
 }

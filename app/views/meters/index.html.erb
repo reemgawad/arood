@@ -1,12 +1,16 @@
 <div class="container">
   <h1 class="text-center mt-3">3arood</h1>
 
-  <div class="search-bar mt-5">
-    <%= form_with url: meters_path, method: :get, class: "d-flex" do %>
+  <div class="search-bar mt-5" data-controller="refresh-meter">
+    <%= form_with url: meters_path, method: :get, data: { refresh_meter_target: 'form' }, class: "d-flex" do %>
       <%= text_field_tag :query,
         params[:query],
         class: "form-control",
-        placeholder: "Type your line.."
+        placeholder: "Type your line..",
+        data: {
+                refresh_list_target: 'searchInput',
+                action: "keyup->refresh-meter#update",
+                }
       %>
       <%= submit_tag "Search", class: "btn btn-primary" %>
     <% end %>

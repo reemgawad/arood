@@ -39,8 +39,6 @@ class MetersController < ApplicationController
       '01'
     when madd
       '10'
-    else
-      '0'
     end
   end
 end

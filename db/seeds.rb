@@ -133,7 +133,7 @@ almutakarab = Meter.create(
 almohdath = Meter.create(
   {
     name: "المحدث",
-    pattern: "10110101101011010110",
+    pattern: "1110111011101110",
     mnemonic: "فعلن فعلن فعلن فعلن"
   }
 )

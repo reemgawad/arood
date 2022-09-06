@@ -17,7 +17,7 @@ class MetersController < ApplicationController
       @meters = Meter.search_by_pattern(input_pattern)
       # raise
     else
-      @meters = Meter.all
+      @meters = []
     end
   end
 
